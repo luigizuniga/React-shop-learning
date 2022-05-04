@@ -1,5 +1,8 @@
 import React from 'react';
 import ProductItem from '@components/ProductItem';
+
+import NotFound from  '@pages/NotFound';
+
 import useGetProducts from '../hooks/useGetProducts';
 import '@styles/ProductList.scss';
 

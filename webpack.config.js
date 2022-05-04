@@ -14,10 +14,15 @@ module.exports = {
         extensions: ['.js','.jsx'],
         alias: {
             '@components':path.resolve(__dirname, 'src/components/'),
-            '@container':path.resolve(__dirname, 'src/containers'),
-            '@styles':path.resolve(__dirname, 'src/styles'),
-            '@icons':path.resolve(__dirname,'src/assets/icons'),
+            '@containers':path.resolve(__dirname, 'src/containers/'),
+            '@pages': path.resolve(__dirname,'src/pages/'),
+            '@routes': path.resolve(__dirname,'src/routes/'),
+            '@styles':path.resolve(__dirname, 'src/styles/'),
+            '@icons':path.resolve(__dirname,'src/assets/icons/'),
             '@logos': path.resolve(__dirname, 'src/assets/logos/')
+        },
+        fallback: {
+            process: require.resolve("url/")
         }
     },
     module: {

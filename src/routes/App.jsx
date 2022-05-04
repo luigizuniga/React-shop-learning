@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //Containers
 import Layout from '@containers/Layout';
+
 //Pages
 import Home from '@pages/Home';
 import Login from '@pages/Login';
