@@ -1,9 +1,11 @@
 import { useState } from 'react';
 
+// state initial 
 const initialState = {
     cart: []
 };
 
+// hook para obtener el elemento cart
 const useInitialState = () =>{
     const [ state,  setState ] = useState(initialState);  
 
